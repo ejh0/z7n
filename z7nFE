@@ -6299,7 +6299,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("https://raw.githubusercontent.com/ejh0/z7n/main/z7nEmptyString.lua'))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ejh0/z7n/main/z7nFE.lua'))()")
 	end
 end)
 
